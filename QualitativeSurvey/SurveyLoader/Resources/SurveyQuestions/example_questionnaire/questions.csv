@@ -1,0 +1,9 @@
+question,type,images,choices
+"What is your name?","open","[]","[]"
+"Do you want to take this survey anonymously?","multi_single","[]","['yes', 'no']"
+"The following two CT scans were taken before and after some image enhancement was applied to the medical data. On first impressions, which of the two have more easily discernable bone cross-sections?","multi_single","['RegLib_C01_1.nrrd', 'RegLib_C01_2.nrrd']","['C01_1', 'C01_2', 'Neither appear better than the other']"
+"Which of the two are, overall, less noisy?","multi_single","['RegLib_C01_1.nrrd', 'RegLib_C01_2.nrrd']","['C01_1', 'C01_2', 'Neither appear better than the other']"
+"Are there any other qualitative observations to be made about the images?","open","['RegLib_C01_1.nrrd', 'RegLib_C01_2.nrrd']","[]"
+"The following two images were constructed using slightly different algorithms. On first impressions, which of the two have more easily discernable bone cross-sections?","multi_single","['MR-head.nrrd', 'DTI-Brain.nrrd']","['MR-head', 'DTI-Brain', 'Neither appear better than the other']"
+"Which of the two are, overall, less noisy?","multi_single","['MR-head.nrrd', 'DTI-Brain.nrrd']","['MR-head', 'DTI-Brain', 'Neither appear better than the other']"
+"Are there any other qualitative observations to be made about the images?","open","['MR-head.nrrd', 'DTI-Brain.nrrd']","[]"

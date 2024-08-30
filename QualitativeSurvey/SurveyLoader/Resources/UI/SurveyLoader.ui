@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SurveyLoader</class>
+ <widget class="qMRMLWidget" name="SurveyLoader">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>652</width>
+    <height>868</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+  <item>
+    <widget class="QWidget">
+        <layout class="QHBoxLayout">
+          <item>
+            <widget class="QPushButton" name="loadSurveyButton">
+              <property name="text">
+                <string>Load New Survey</string>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <widget class="QPushButton" name="closeSurveyButton">
+              <property name="text">
+                <string>Close Current Survey</string>
+              </property>
+            </widget>
+          </item>
+        </layout>
+    </widget>
+  </item>
+   <item>
+    <widget class="Line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+        <widget class="QWidget" name="surveyContainer">
+            <layout class="QVBoxLayout">
+              <item>
+                <widget class="QWidget" name="surveyQuestionsContainer">
+                    <layout class="QVBoxLayout"/>
+                </widget>
+              </item>
+              <item>
+                    <widget class="QWidget" name="surveyNavigationsContainer">
+                        <layout class="QHBoxLayout"/>
+                    </widget>
+              </item>
+              <item>
+                    <widget class="QWidget" name="surveyFooterContainer">
+                        <layout class="QVBoxLayout">
+                          <item>
+                            <widget class="Line">
+                              <property name="orientation">
+                                <enum>Qt::Horizontal</enum>
+                              </property>
+                            </widget>
+                          </item>
+                        </layout>
+                    </widget>
+              </item>
+            </layout>
+        </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>qMRMLWidget</class>
+   <extends>QWidget</extends>
+   <header>qMRMLWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>loadSurveyButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SurveyLoader</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>139</x>
+     <y>44</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>139</x>
+     <y>142</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup_3"/>
+ </buttongroups>
+</ui>

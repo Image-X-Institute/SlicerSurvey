@@ -1,0 +1,9 @@
+question,type,images,choices
+"What is your name?","open","[]",[]
+"Do you want to take this survey anonymously?","multi_single","[]","['yes', 'no']"
+"open ended question","open","['RegLib_C01_1.nrrd', 'RegLib_C01_2.nrrd']",[]
+"multi question","multi_single","['MR-head.nrrd']","['no', 'yes', 'prefer not to say']"
+"multi multi question","multi_multi","['RegLib_C01_1.nrrd', 'RegLib_C01_2.nrrd']","['a', 'b', 'c']"
+"dropdown queston","dropdown","['MR-head.nrrd']","['mcd', 'bgk', 'kfc']"
+"slider question","slider","['MR-head.nrrd']","[-2, 100, 'kfc']"
+"rating question","rating","['RegLib_C01_1.nrrd', 'RegLib_C01_2.nrrd']","[1, 10, 1]"
